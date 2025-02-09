@@ -2,7 +2,7 @@
 
 This is a custom implementation of the round() function in C#, designed to handle rounding floating-point numbers.
 
-##Features
+## Features
 
 - **Dynamic Decimal Handling:**  
   The program adjusts dynamically to the number of decimal places in the input value and rounds the number accordingly.
@@ -25,7 +25,7 @@ This is a custom implementation of the round() function in C#, designed to handl
 - **Error Handling:**  
   The program checks for invalid input and ensures proper rounding behavior, preventing errors like division by zero or invalid values. It also examines the user's input and automatically corrects minor mistakes.
 
-##Usage
+## Usage
 
 ```csharp
 // General case
@@ -44,11 +44,11 @@ int decimalPlaces = -1;
 kerekites(floatNumber, decimalPlaces); // Output: 10
 ```
 
-##Limitations
+## Limitations
 
 - For most cases it works accurately.
 - In some cases it might exhibit issues due to floating-point representation limitations. For example: instead of rounding to 2 the result is 1.9999.
 
-##License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
