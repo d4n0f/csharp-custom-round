@@ -8,7 +8,7 @@ This is a custom implementation of the round() function in C#, designed to handl
   The program adjusts dynamically to the number of decimal places in the input value and rounds the number accordingly.
   
 - **Default Decimal Handling:**  
-  If no decimal places are provided, the function rounds based on the input number's inherent decimal places.
+  If the given float value and the decimal place match, the result remains the same as the input number.
   
 - **Rounding to More Decimal Places:**  
   The function can round the number to more decimal places than the original value, allowing for precise control over the result.
