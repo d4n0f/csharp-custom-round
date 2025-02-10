@@ -13,8 +13,8 @@ This is a custom implementation of the round() function in C#, designed to handl
 - **Rounding to More Decimal Places:**  
   The function can round the number to more decimal places than the original value, allowing for precise control over the result.
   
-- **Rounding to Fewer Decimal Places (Positive Numbers):**  
-  If you specify fewer decimal places, the program rounds the value to a positive number with the requested precision.
+- **Rounding to Fewer but Positive Decimal Places:**  
+  If you specify fewer but positive decimal places, the program rounds the value to a number with the requested precision.
 
 - **Rounding to Zero Decimal Places:**  
   The function rounds the number to the nearest whole number (integer) when 0 decimal places are requested.
@@ -29,19 +29,19 @@ This is a custom implementation of the round() function in C#, designed to handl
 
 ```csharp
 // General case
-float floatNumber = 2,172;
+double floatingNumber = 2,172;
 int decimalPlaces = 1;
-kerekites(floatNumber, decimalPlaces); // Output: 2,2
+Kerekites(floatingNumber, decimalPlaces); // Output: 2,2
 
 // Rounding to a higher decimal place
-float floatNumber = 3,5;
+double floatingNumber = 3,5;
 int decimalPlaces = 3;
-kerekites(floatNumber, decimalPlaces); // Output: 3,500
+Kerekites(floatingNumber, decimalPlaces); // Output: 3,500
 
 // Negative decimal places handling
-float floatNumber = 12,562;
+double floatingNumber = 12,562;
 int decimalPlaces = -1;
-kerekites(floatNumber, decimalPlaces); // Output: 10
+Kerekites(floatingNumber, decimalPlaces); // Output: 10
 ```
 
 ## Limitations
